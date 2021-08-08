@@ -8,7 +8,7 @@ namespace domino_models_test
   public class TileTest
   {
     [Fact]
-    public void tile_creation()
+    public void TileCreation()
     {
       const int MAX_END_VALUE = 6;
       for (int i = 0; i <= MAX_END_VALUE; i++)
