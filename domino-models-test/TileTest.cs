@@ -1,18 +1,26 @@
 using System;
 using Xunit;
 using FluentAssertions;
-
-using domino_models;
+using domino.models;
 
 namespace domino_models_test
 {
     public class TileTest
     {
         [Fact]
-        public void tile_0_0_creation()
+        public void tile_creation()
         {
-            Tile tile0_0 = new Tile (0,7);
-            Assert.Equal(0,1);
+            const int MAX_END_VALUE = 6;
+            for (int i = 0; i <= MAX_END_VALUE; i++)
+            {
+                for (int j = 0; j <= MAX_END_VALUE; j++)
+                {
+                    Tile tile = new Tile (i,j);
+                    tile.Should().BeOfType<Tile>();
+                    tile.end1.Should().Be(i);
+                    tile.end2.Should().Be(j);
+                }
+            }
         }
     }
 }
