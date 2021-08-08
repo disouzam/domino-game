@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using static System.Math;
 
 namespace domino.models
 {
@@ -23,8 +24,8 @@ namespace domino.models
         throw new InvalidOperationException($"Negative values are not allowed.");
       }
 
-      _End1 = End1;
-      _End2 = End2;
+      _End1 = Min(End1, End2);
+      _End2 = Max(End1, End2);
     }
 
     public int end1

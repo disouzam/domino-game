@@ -1,3 +1,4 @@
+using static System.Math;
 using Xunit;
 using FluentAssertions;
 using domino.models;
@@ -16,8 +17,9 @@ namespace domino_models_test
         {
           Tile tile = new Tile(i, j);
           tile.Should().BeOfType<Tile>();
-          tile.end1.Should().Be(i);
-          tile.end2.Should().Be(j);
+
+          tile.end1.Should().Be(Min(i,j));
+          tile.end2.Should().Be(Max(i,j));
         }
       }
     }
