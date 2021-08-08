@@ -224,13 +224,13 @@ var assemblies = [
   {
     "name": "domino.models",
     "classes": [
-      { "name": "domino.models.DominoSet", "rp": "domino.models_DominoSet.html", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "ct": "LineCoverage", "mc": "-", "cb": 4, "tb": 6, "lch": [76.4], "bch": [66.6], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "lcq": 76.4, "cb": 4, "tb": 6, "bcq": 66.6 }] },
-      { "name": "domino.models.Stock", "rp": "domino.models_Stock.html", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 6, "lch": [53.5], "bch": [0], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "lcq": 53.5, "cb": 0, "tb": 6, "bcq": 0 }] },
-      { "name": "domino.models.Tile", "rp": "domino.models_Tile.html", "cl": 22, "ucl": 7, "cal": 29, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 6, "tb": 12, "lch": [75.8], "bch": [50], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 22, "ucl": 7, "cal": 29, "tl": 65, "lcq": 75.8, "cb": 6, "tb": 12, "bcq": 50 }] },
+      { "name": "domino.models.DominoSet", "rp": "domino.models_DominoSet.html", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "ct": "LineCoverage", "mc": "-", "cb": 4, "tb": 6, "lch": [76.4], "bch": [66.6], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "lcq": 76.4, "cb": 4, "tb": 6, "bcq": 66.6 }, { "et": "8/8/2021 - 2:38:15 PM", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "lcq": 76.4, "cb": 4, "tb": 6, "bcq": 66.6 }, { "et": "8/8/2021 - 2:42:19 PM", "cl": 26, "ucl": 8, "cal": 34, "tl": 60, "lcq": 76.4, "cb": 4, "tb": 6, "bcq": 66.6 }] },
+      { "name": "domino.models.Stock", "rp": "domino.models_Stock.html", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 6, "lch": [53.5], "bch": [0], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "lcq": 53.5, "cb": 0, "tb": 6, "bcq": 0 }, { "et": "8/8/2021 - 2:38:15 PM", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "lcq": 53.5, "cb": 0, "tb": 6, "bcq": 0 }, { "et": "8/8/2021 - 2:42:19 PM", "cl": 15, "ucl": 13, "cal": 28, "tl": 54, "lcq": 53.5, "cb": 0, "tb": 6, "bcq": 0 }] },
+      { "name": "domino.models.Tile", "rp": "domino.models_Tile.html", "cl": 28, "ucl": 0, "cal": 28, "tl": 62, "ct": "LineCoverage", "mc": "-", "cb": 8, "tb": 8, "lch": [75.8,100,100], "bch": [50,83.3,100], "hc": [{ "et": "8/8/2021 - 2:20:13 PM", "cl": 22, "ucl": 7, "cal": 29, "tl": 65, "lcq": 75.8, "cb": 6, "tb": 12, "bcq": 50 }, { "et": "8/8/2021 - 2:38:15 PM", "cl": 30, "ucl": 0, "cal": 30, "tl": 65, "lcq": 100, "cb": 10, "tb": 12, "bcq": 83.3 }, { "et": "8/8/2021 - 2:42:19 PM", "cl": 28, "ucl": 0, "cal": 28, "tl": 62, "lcq": 100, "cb": 8, "tb": 8, "bcq": 100 }] },
     ]},
 ];
 
-var historicCoverageExecutionTimes = [];
+var historicCoverageExecutionTimes = ["8/8/2021 - 2:38:15 PM", "8/8/2021 - 2:20:13 PM"];
 
 var riskHotspotMetrics = [
 ];
