@@ -2,7 +2,7 @@
 
 namespace domino_models
 {
-    public class Class1
+    public class Tile
     {
     }
 }
