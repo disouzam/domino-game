@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.7666" branch-rate="0.6" version="1.9" timestamp="1628444537" lines-covered="69" lines-valid="90" branches-covered="12" branches-valid="20">
+<coverage line-rate="0.7752" branch-rate="0.6" version="1.9" timestamp="1628446457" lines-covered="69" lines-valid="89" branches-covered="12" branches-valid="20">
   <sources>
-    <source>d:\GitHubRepos\domino-game\domino.models\</source>
+    <source>D:\GitHubRepos\domino-game\domino.models\</source>
   </sources>
   <packages>
-    <package name="domino.models" line-rate="0.7666" branch-rate="0.6" complexity="33">
+    <package name="domino.models" line-rate="0.7752" branch-rate="0.6" complexity="33">
       <classes>
         <class name="domino.models.DominoSet" filename="DominoSet.cs" line-rate="0.7646999999999999" branch-rate="0.6666" complexity="9">
           <methods>
@@ -124,7 +124,7 @@
             <line number="27" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="domino.models.Stock" filename="Stock.cs" line-rate="0.5357" branch-rate="0" complexity="11">
+        <class name="domino.models.Stock" filename="Stock.cs" line-rate="0.5555" branch-rate="0" complexity="11">
           <methods>
             <method name="AddTile" signature="(domino.models.Tile)" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -157,17 +157,16 @@
                 <line number="41" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="TileCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_TileCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="45" hits="2" branch="False" />
-                <line number="46" hits="2" branch="False" />
                 <line number="47" hits="2" branch="False" />
+                <line number="48" hits="2" branch="False" />
+                <line number="49" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="TileSet" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_TileSet" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="50" hits="0" branch="False" />
-                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(domino.models.DominoSet)" line-rate="1" branch-rate="1" complexity="1">
@@ -215,11 +214,10 @@
             <line number="37" hits="0" branch="False" />
             <line number="40" hits="0" branch="False" />
             <line number="41" hits="0" branch="False" />
-            <line number="45" hits="2" branch="False" />
-            <line number="46" hits="2" branch="False" />
             <line number="47" hits="2" branch="False" />
-            <line number="50" hits="0" branch="False" />
-            <line number="51" hits="0" branch="False" />
+            <line number="48" hits="2" branch="False" />
+            <line number="49" hits="2" branch="False" />
+            <line number="52" hits="0" branch="False" />
             <line number="8" hits="2" branch="False" />
             <line number="10" hits="2" branch="False" />
             <line number="12" hits="2" branch="False" />
