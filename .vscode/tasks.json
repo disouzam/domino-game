@@ -103,7 +103,7 @@
     },
     {
       "label": "Run tests and generate a report",
-      "command": "echo hello",
+      "command": "echo Finishing task \"Run tests and generate a report\"",
       "type": "shell",
       "dependsOrder": "sequence",
       "dependsOn":["Test Cobertura", "Test Coverage Report Generator"],
