@@ -49,6 +49,49 @@
         "/consoleloggerparameters:NoSummary"
       ],
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "test lcov.info",
+      "command": "dotnet",
+      "type": "process",
+      "args":[
+        "test",
+        "/p:CollectCoverage=true",
+        "/p:CoverletOutputFormat=lcov",
+        "/p:CoverletOutput=./lcov.info",
+        "./domino-models-test"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Test Cobertura",
+      "command": "dotnet",
+      "type": "process",
+      "args":[
+        "test",
+        "/p:CollectCoverage=true",
+        "/p:CoverletOutputFormat=cobertura",
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Test Coverage Report Generator",
+      "command": "reportgenerator",
+      "type": "process",
+      "args":[
+        "-reports:\"${workspaceFolder}\\domino-models-test\\coverage.cobertura.xml\"",
+        "-targetdir:\"${workspaceFolder}\\domino-models-test\\coveragereport\"",
+        "-reporttypes:Html"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Run tests and generate a report",
+      "command": "echo hello",
+      "type": "shell",
+      "dependsOrder": "sequence",
+      "dependsOn":["Test Cobertura", "Test Coverage Report Generator"],
+      "problemMatcher": "$msCompile"
     }
   ]
 }

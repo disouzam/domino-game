@@ -1,56 +1,65 @@
 ﻿using System;
 using System.Text;
+using static System.Math;
 
 namespace domino.models
 {
-    public class Tile
+  public class Tile
+  {
+    private const int MAX_END_VALUE = 6;
+
+    private int _End1 = int.MinValue;
+
+    private int _End2 = int.MinValue;
+
+    public Tile(int End1, int End2)
     {
-        private const int MAX_END_VALUE = 6;
+      if (End1 > MAX_END_VALUE || End2 > MAX_END_VALUE)
+      {
+        throw new InvalidOperationException($"Maximum end value is {MAX_END_VALUE}");
+      }
 
-        private int _end1 = int.MinValue;
+      if (End1 < 0 || End2 < 0)
+      {
+        throw new InvalidOperationException($"Negative values are not allowed.");
+      }
 
-        private int _end2 = int.MinValue;
-
-        public Tile (int end1, int end2)
-        {
-            if (end1 > MAX_END_VALUE || end2 > MAX_END_VALUE)
-            {
-                throw new InvalidOperationException($"Maximum end value is {MAX_END_VALUE}");
-            }
-
-            if (end1 < 0 || end2 < 0)
-            {
-                throw new InvalidOperationException($"Negative values are not allowed.");
-            }
-
-            _end1 = end1;
-            _end2 = end2;
-        }
-
-        public int end1
-        {
-            get
-            {
-                return _end1;
-            }
-        }
-
-        public int end2
-        {
-            get
-            {
-                return _end2;
-            }
-        }
-
-        public override string ToString()
-        {
-            int min = end1 < end2 ? end1 : end2;
-            int max = end1 < end2 ? end2 : end1;
-
-            var sb = new StringBuilder();
-            sb.AppendLine($"Tile...{min}-{max}");
-            return sb.ToString();
-        }
+      _End1 = Min(End1, End2);
+      _End2 = Max(End1, End2);
     }
+
+    public int End1
+    {
+      get
+      {
+        return _End1;
+      }
+    }
+
+    public int End2
+    {
+      get
+      {
+        return _End2;
+      }
+    }
+
+    public int MaxEndValue
+    {
+      get
+      {
+        return MAX_END_VALUE;
+      }
+    }
+
+    public override string ToString()
+    {
+      int min = End1 < End2 ? End1 : End2;
+      int max = End1 < End2 ? End2 : End1;
+
+      var sb = new StringBuilder();
+      sb.Append($"Tile... {min} - {max}.");
+      return sb.ToString();
+    }
+  }
 }
