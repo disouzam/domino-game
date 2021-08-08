@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/console-app/console-app.csproj",
+        "${workspaceFolder}\\console-app\\console-app.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/domino-models-test/domino-models-test.csproj",
+        "${workspaceFolder}\\domino-models-test\\domino-models-test.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -31,20 +31,35 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}/console-app/console-app.csproj",
+        "${workspaceFolder}\\console-app\\console-app.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
       "problemMatcher": "$msCompile"
     },
     {
-      "label": "watch",
+      "label": "watch Console App",
       "command": "dotnet",
       "type": "process",
       "args": [
         "watch",
         "run",
-        "${workspaceFolder}/console-app/console-app.csproj",
+        "--project",
+        "${workspaceFolder}\\console-app\\console-app.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "watch Tests",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "test",
+        "--project",
+        "${workspaceFolder}\\domino-models-test\\domino-models-test.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
