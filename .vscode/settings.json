@@ -3,5 +3,18 @@
     "**/bin": true,
     "**/obj": true
   },
-  "dotnet-test-explorer.autoWatch": true
+  "dotnet-test-explorer.autoWatch": true,
+  "editor.renderWhitespace": "all",
+  "editor.highlightActiveIndentGuide": false,
+  "editor.stickyTabStops": false,
+  "json.maxItemsComputed": 500000,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "indenticator.inner.showIndentGuide": false,
+  "indenticator.color.dark": "#ff000",
+  "indenticator.inner.color.dark": "#ff000",
+  "indenticator.showHover": false,
+  "indenticator.inner.showHover": false,
+  "indenticator.hover.peekBack": 1,
+  "indenticator.hover.peekForward": 1,
+  "indenticator.hover.highlight": false,
 }
