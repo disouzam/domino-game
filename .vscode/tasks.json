@@ -81,7 +81,8 @@
       "args":[
         "-reports:\"${workspaceFolder}\\domino-models-test\\coverage.cobertura.xml\"",
         "-targetdir:\"${workspaceFolder}\\domino-models-test\\coveragereport\"",
-        "-reporttypes:Html"
+        "-reporttypes:Html",
+        "-historydir:\"${workspaceFolder}\\domino-models-test\\coveragehistory\""
       ],
       "problemMatcher": "$msCompile"
     },
