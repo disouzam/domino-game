@@ -14,6 +14,18 @@
       "problemMatcher": "$msCompile"
     },
     {
+      "label": "build library",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/domino-models-test/domino-models-test.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
       "label": "publish",
       "command": "dotnet",
       "type": "process",
