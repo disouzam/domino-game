@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 
 namespace domino.models
 {
@@ -11,11 +12,33 @@ namespace domino.models
     public DominoSet(int MaxEndValue)
     {
       _MaxEndValue = MaxEndValue;
+
+      int j = 0;
+      for (int i = 0; i <= _MaxEndValue; i++)
+      {
+        while (j <= _MaxEndValue)
+        {
+          Tile tile = new Tile(i, j);
+          _TileSet.Add(tile);
+          j++;
+        }
+        j = i + 1;
+      }
     }
 
     public int Size()
     {
       return _TileSet.Count;
+    }
+
+    public override string ToString()
+    {
+      var sb = new StringBuilder();
+      foreach (var item in _TileSet)
+      {
+        sb.AppendLine(item.ToString());
+      }
+      return sb.ToString();
     }
   }
 }

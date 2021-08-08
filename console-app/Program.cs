@@ -7,10 +7,10 @@ namespace console_app
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
-      Tile tile0_0 = new Tile(0, 0);
+      Console.WriteLine("Domino games!");
+      DominoSet dominoSet = new DominoSet(6);
 
-      Console.WriteLine(tile0_0);
+      Console.WriteLine(dominoSet);
     }
   }
 }
