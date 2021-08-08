@@ -26,9 +26,12 @@ namespace domino.models
       }
     }
 
-    public List<Tile> Tiles()
+    public List<Tile> Tiles
     {
-      return _TileSet;
+      get
+      {
+        return _TileSet;
+      }
     }
 
     public int Size()
@@ -36,9 +39,12 @@ namespace domino.models
       return _TileSet.Count;
     }
 
-    public int MaxEndValue()
+    public int MaxEndValue
     {
-      return _MaxEndValue;
+      get
+      {
+        return _MaxEndValue;
+      }
     }
 
     public override string ToString()

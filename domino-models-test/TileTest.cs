@@ -18,10 +18,18 @@ namespace domino_models_test
           Tile tile = new Tile(i, j);
           tile.Should().BeOfType<Tile>();
 
-          tile.end1.Should().Be(Min(i,j));
-          tile.end2.Should().Be(Max(i,j));
+          tile.End1.Should().Be(Min(i, j));
+          tile.End2.Should().Be(Max(i, j));
         }
       }
+    }
+
+    [Fact]
+    public void StringFormatting()
+    {
+      Tile tile = new Tile(1, 3);
+      var expectedString = "Tile... 1 - 3.";
+      tile.ToString().Should().Be(expectedString);
     }
   }
 }

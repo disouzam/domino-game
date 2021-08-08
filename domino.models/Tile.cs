@@ -28,7 +28,7 @@ namespace domino.models
       _End2 = Max(End1, End2);
     }
 
-    public int end1
+    public int End1
     {
       get
       {
@@ -36,7 +36,7 @@ namespace domino.models
       }
     }
 
-    public int end2
+    public int End2
     {
       get
       {
@@ -44,13 +44,21 @@ namespace domino.models
       }
     }
 
+    public int MaxEndValue
+    {
+      get
+      {
+        return MAX_END_VALUE;
+      }
+    }
+
     public override string ToString()
     {
-      int min = end1 < end2 ? end1 : end2;
-      int max = end1 < end2 ? end2 : end1;
+      int min = End1 < End2 ? End1 : End2;
+      int max = End1 < End2 ? End2 : End1;
 
       var sb = new StringBuilder();
-      sb.AppendLine($"Tile...{min} - {max}");
+      sb.Append($"Tile... {min} - {max}.");
       return sb.ToString();
     }
   }

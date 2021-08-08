@@ -8,7 +8,7 @@ namespace domino_models_test
   public class DominoSetTest
   {
     private const int MaxEndValue = 6;
-    
+
     private DominoSet dominoSet;
 
     public DominoSetTest()
@@ -26,14 +26,14 @@ namespace domino_models_test
     [Fact]
     public void TileSetRetrieval()
     {
-      List<Tile> tileList = dominoSet.Tiles();
+      List<Tile> tileList = dominoSet.Tiles;
       tileList.Count.Should().Be(dominoSet.Size());
     }
 
     [Fact]
     public void CheckMaxEndValue()
     {
-      dominoSet.MaxEndValue().Should().Be(MaxEndValue);
+      dominoSet.MaxEndValue.Should().Be(MaxEndValue);
     }
   }
 }
