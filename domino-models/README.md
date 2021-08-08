@@ -1,1 +1,4 @@
 This class library contains an own implementation of a domino games, from the models that represent the pieces to classes that encapsulate the rules of one or more games.
+
+A domino game is made of a set of tiles.
+> Each domino is a retangular tile with a line dividing its face into two square ends. Each end is marked with a number of spots (also called pips or dots) or is blank [...] The traditional European domino set consists of 28 tiles, also known as pieces, bones, rocks, stones, men, cards or just dominoes, featuring all combinations of spot counts between zero and six. (Source: https://en.wikipedia.org/wiki/Dominoes)
