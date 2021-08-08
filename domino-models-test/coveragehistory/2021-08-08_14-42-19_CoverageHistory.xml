@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<coverage version="1.0" date="2021-08-08_14-42-19" tag="">
+  <assembly name="domino.models">
+    <class name="domino.models.DominoSet" coveredlines="26" coverablelines="34" totallines="60" coveredbranches="4" totalbranches="6" />
+    <class name="domino.models.Stock" coveredlines="15" coverablelines="28" totallines="54" coveredbranches="0" totalbranches="6" />
+    <class name="domino.models.Tile" coveredlines="28" coverablelines="28" totallines="62" coveredbranches="8" totalbranches="8" />
+  </assembly>
+</coverage>
