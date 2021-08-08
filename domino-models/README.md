@@ -1,1 +1,0 @@
-This class library contains an own implementation of a domino games, from the models that represent the pieces to classes that encapsulate the rules of one or more games.

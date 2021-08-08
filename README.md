@@ -1,1 +1,3 @@
 This repository contains a fun side-project / personal project to implement a domino game, firstly in a console app, later maybe in some web application format. The goal is to build new skills and refresh old ones while having some fun with a game that became a passtime recently and a family leisure in pandemic times.
+
+I will be using the rules and some technical info provided by The American Domino Company as stated in their website (https://www.dominorules.com/rules). I don't have any business relationship with them nor I have any profit intent with this application.
