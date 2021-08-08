@@ -12,7 +12,7 @@ namespace domino_models
 
         public Tile (int end1, int end2)
         {
-            if (end1 == maxEndValue || end2 == maxEndValue)
+            if (end1 == MAX_END_VALUE || end2 == MAX_END_VALUE)
             {
                 throw new InvalidOperationException($"Maximum end value is {MAX_END_VALUE}");
             }

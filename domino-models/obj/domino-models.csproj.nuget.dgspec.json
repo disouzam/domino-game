@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj": {}
+    "d:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj": {}
   },
   "projects": {
-    "D:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj": {
+    "d:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj",
+        "projectUniqueName": "d:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj",
         "projectName": "domino-models",
-        "projectPath": "D:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj",
+        "projectPath": "d:\\GitHubRepos\\domino-game\\domino-models\\domino-models.csproj",
         "packagesPath": "D:\\Users\\mi019479\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHubRepos\\domino-game\\domino-models\\obj\\",
+        "outputPath": "d:\\GitHubRepos\\domino-game\\domino-models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
