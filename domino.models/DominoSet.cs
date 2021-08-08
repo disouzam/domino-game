@@ -26,9 +26,19 @@ namespace domino.models
       }
     }
 
+    public List<Tile> Tiles()
+    {
+      return _TileSet;
+    }
+
     public int Size()
     {
       return _TileSet.Count;
+    }
+
+    public int MaxEndValue()
+    {
+      return _MaxEndValue;
     }
 
     public override string ToString()
