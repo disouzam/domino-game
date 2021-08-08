@@ -1,0 +1,1 @@
+This console app enables testing and checking the implementation done as class libraries of the domino game(s).

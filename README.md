@@ -1,0 +1,1 @@
+This repository contains a fun side-project / personal project to implement a domino game, firstly in a console app, later maybe in some web application format. The goal is to build new skills and refresh old ones while having some fun with a game that became a passtime recently and a family leisure in pandemic times.
