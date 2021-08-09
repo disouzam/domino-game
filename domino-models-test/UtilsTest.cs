@@ -22,6 +22,16 @@ namespace domino_models_test
       result.Should().Be(expected);
     }
 
+    [Fact]
+    public void InvalidArgumentFactorial()
+    {
+      Action act = () =>
+      {
+        int result = factorial(-1);
+      };
+      act.Should().Throw<ArgumentOutOfRangeException>().WithMessage("Specified argument was out of the range of valid values. (Parameter 'There is no implementation of factorial of negative numbers.')");
+    }
+
     [Theory]
     [InlineData(2, 6)]
     [InlineData(3, 10)]
