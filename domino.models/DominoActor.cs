@@ -8,13 +8,13 @@ namespace domino.models
   {
     private static Random randomGenerator = new Random(0);
 
-    private bool _FullSet = false;
+    private protected bool _FullSet = false;
 
-    private int _MaxEndValue = int.MinValue;
+    private protected int _MaxEndValue = int.MinValue;
 
     private int _MaxNumberTiles = int.MinValue;
 
-    private List<Tile> _TileList = new List<Tile>();
+    private protected List<Tile> _TileList = new List<Tile>();
 
     public DominoActor(DominoSet dominoSet)
     {
@@ -44,7 +44,7 @@ namespace domino.models
       }
     }
 
-    public void AddTile(Tile tile)
+    public virtual void AddTile(Tile tile)
     {
       if (TileCount == 0 && tile != null)
       {
