@@ -89,12 +89,13 @@ namespace domino.models
         Tile tile = _TileList[index];
         _TileList.RemoveAt(index);
         return tile;
-      }else
+      }
+      else
       {
         return null;
       }
 
-      
+
     }
 
     public int TileCount

@@ -8,7 +8,7 @@ namespace domino.models
     {
       if (n < 0)
       {
-        throw new ArgumentOutOfRangeException("Invalid argument");
+        throw new ArgumentOutOfRangeException("There is no implementation of factorial of negative numbers.");
       }
       if (n == 0 || n == 1)
       {

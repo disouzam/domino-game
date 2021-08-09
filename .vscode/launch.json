@@ -26,14 +26,14 @@
       // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
       "name": "Run Tests",
       "type": "coreclr",
-      "request": "attach",
-      "preLaunchTask": "build library",
+      "request": "launch",
+      // "preLaunchTask": "build library",
       // If you have changed target frameworks, make sure to update the program path.
       "program": "${workspaceFolder}/domino-models-test/bin/Debug/net5.0/domino-models-test.dll",
       "args": [],
       "cwd": "${workspaceFolder}/domino-models-test",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-      "console": "internalConsole",
+      "console": "integratedTerminal",
       "stopAtEntry": false
     },
     {

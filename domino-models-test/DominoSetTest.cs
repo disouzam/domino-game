@@ -35,5 +35,12 @@ namespace domino_models_test
     {
       dominoSet.MaxEndValue.Should().Be(MaxEndValue);
     }
+
+    [Fact]
+    public void TestingToString()
+    {
+      string expected = "Tile... 0 - 0.\r\nTile... 0 - 1.\r\nTile... 0 - 2.\r\nTile... 0 - 3.\r\nTile... 0 - 4.\r\nTile... 0 - 5.\r\nTile... 0 - 6.\r\nTile... 1 - 1.\r\nTile... 1 - 2.\r\nTile... 1 - 3.\r\nTile... 1 - 4.\r\nTile... 1 - 5.\r\nTile... 1 - 6.\r\nTile... 2 - 2.\r\nTile... 2 - 3.\r\nTile... 2 - 4.\r\nTile... 2 - 5.\r\nTile... 2 - 6.\r\nTile... 3 - 3.\r\nTile... 3 - 4.\r\nTile... 3 - 5.\r\nTile... 3 - 6.\r\nTile... 4 - 4.\r\nTile... 4 - 5.\r\nTile... 4 - 6.\r\nTile... 5 - 5.\r\nTile... 5 - 6.\r\nTile... 6 - 6.\r\n";
+      dominoSet.ToString().Should().BeEquivalentTo(expected);
+    }
   }
 }
