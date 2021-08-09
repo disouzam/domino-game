@@ -118,7 +118,7 @@ namespace domino.models.test
         Tile tile = stock.RandomTileRemoval();
         tile.Should().NotBeNull();
       }
-      
+
       Tile lastTile = stock.RandomTileRemoval();
       lastTile.Should().BeNull();
     }
