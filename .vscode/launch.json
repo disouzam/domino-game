@@ -13,9 +13,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/console-app/bin/Debug/net5.0/console-app.dll",
+      "program": "${workspaceFolder}/console.app/bin/Debug/net5.0/console.app.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/console-app",
+      "cwd": "${workspaceFolder}/console.app",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "integratedTerminal",
       "stopAtEntry": false
@@ -29,9 +29,9 @@
       "request": "launch",
       // "preLaunchTask": "build library",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/domino-models-test/bin/Debug/net5.0/domino-models-test.dll",
+      "program": "${workspaceFolder}/domino.models.test/bin/Debug/net5.0/domino.models.test.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/domino-models-test",
+      "cwd": "${workspaceFolder}/domino.models.test",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
       "console": "integratedTerminal",
       "stopAtEntry": false
