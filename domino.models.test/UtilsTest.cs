@@ -5,7 +5,7 @@ using domino.models;
 using System;
 using static domino.models.Utils;
 
-namespace domino_models_test
+namespace domino.models.test
 {
   public class UtilsTest
   {

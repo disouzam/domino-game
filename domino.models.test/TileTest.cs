@@ -4,7 +4,7 @@ using FluentAssertions;
 using domino.models;
 using System;
 
-namespace domino_models_test
+namespace domino.models.test
 {
   public class TileTest
   {
