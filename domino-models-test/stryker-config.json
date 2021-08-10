@@ -1,0 +1,24 @@
+{
+  "stryker-config":
+  {
+      "reporters": [
+          "progress",
+          "html"
+      ],
+      "log-level": "info",
+      "log-file":true,
+      "timeout-ms": 10000,
+      "project-file": "domino.models.csproj",
+      "max-concurrent-test-runners": 4,
+      "threshold-high": 80,
+      "threshold-low": 70,
+      "threshold-break": 60,
+      "mutation-level": "Standard",
+      "mutate": [
+      ],
+      "excluded-mutations": [
+      ],
+      "ignore-methods": [
+      ]
+  }
+}
