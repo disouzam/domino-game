@@ -19,7 +19,6 @@
       "excluded-mutations": [
       ],
       "ignore-methods": [
-      ],
-      "dashboard-compare": true
+      ]
   }
 }
