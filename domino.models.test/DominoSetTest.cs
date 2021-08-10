@@ -3,7 +3,7 @@ using FluentAssertions;
 using domino.models;
 using System.Collections.Generic;
 
-namespace domino_models_test
+namespace domino.models.test
 {
   public class DominoSetTest
   {

@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}\\console-app\\console-app.csproj",
+        "${workspaceFolder}\\console.app\\console.app.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -19,7 +19,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}\\domino-models-test\\domino-models-test.csproj",
+        "${workspaceFolder}\\domino.models.test\\domino.models.test.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -31,7 +31,7 @@
       "type": "process",
       "args": [
         "publish",
-        "${workspaceFolder}\\console-app\\console-app.csproj",
+        "${workspaceFolder}\\console.app\\console.app.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -45,7 +45,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}\\console-app\\console-app.csproj",
+        "${workspaceFolder}\\console.app\\console.app.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -59,7 +59,7 @@
         "watch",
         "test",
         "--project",
-        "${workspaceFolder}\\domino-models-test\\domino-models-test.csproj",
+        "${workspaceFolder}\\domino.models.test\\domino.models.test.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -74,7 +74,7 @@
         "/p:CollectCoverage=true",
         "/p:CoverletOutputFormat=lcov",
         "/p:CoverletOutput=./lcov.info",
-        "./domino-models-test"
+        "./domino.models.test"
       ],
       "problemMatcher": "$msCompile"
     },
@@ -94,10 +94,10 @@
       "command": "reportgenerator",
       "type": "process",
       "args":[
-        "-reports:\"${workspaceFolder}\\domino-models-test\\coverage.cobertura.xml\"",
-        "-targetdir:\"${workspaceFolder}\\domino-models-test\\coveragereport\"",
+        "-reports:\"${workspaceFolder}\\domino.models.test\\coverage.cobertura.xml\"",
+        "-targetdir:\"${workspaceFolder}\\domino.models.test\\coveragereport\"",
         "-reporttypes:Html",
-        "-historydir:\"${workspaceFolder}\\domino-models-test\\coveragehistory\""
+        "-historydir:\"${workspaceFolder}\\domino.models.test\\coveragehistory\""
       ],
       "problemMatcher": "$msCompile"
     },
